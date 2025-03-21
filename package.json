@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "vite"
+    "client": "cd frontend && npx vite"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
