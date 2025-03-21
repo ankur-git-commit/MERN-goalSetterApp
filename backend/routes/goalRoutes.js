@@ -5,6 +5,7 @@ import {
     updateGoal,
     deleteGoal,
 } from "../controller/goalController.js"
+import protect from '../middleware/authMiddleware.js'
 
 const router = express.Router()
 
