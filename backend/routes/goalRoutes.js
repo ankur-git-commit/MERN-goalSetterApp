@@ -16,4 +16,4 @@ router.route('/').get(getGoals).post(setGoal)
 // router.delete("/:id", deleteGoal)
 router.route('/:id').put(updateGoal).delete(deleteGoal)
 
-export { router }
+export { router as goalRouter }
