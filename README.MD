@@ -1,4 +1,4 @@
-![App Image](GoalSetter.png)
+![App Image](Trackly.png)
 
 # Goal Setter App
 
