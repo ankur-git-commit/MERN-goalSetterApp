@@ -1,6 +1,6 @@
-![App Image](Trackly)
+![App Image](Trackly.png)
 
-# Goal Setter App
+# Goal Tracking App
 
 A full-stack MERN (MongoDB, Express, React, Node.js) application for creating and managing personal goals. Users can register, login, and maintain a list of goals.
 
