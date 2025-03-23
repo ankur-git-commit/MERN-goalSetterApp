@@ -6,10 +6,9 @@ import connectDB from "./config/db.js"
 import { goalRouter } from "./routes/goalRoutes.js"
 import { userRouter } from "./routes/userRoutes.js"
 import { errorHandler } from "./middleware/errorMiddleware.js"
+const PORT = process.env.PORT || 3000
 
 connectDB()
-
-const PORT = process.env.PORT || 3000
 
 const app = express()
 

@@ -4,6 +4,8 @@ import User from "../models/userModel.js"
 
 const protect = asyncHandler(async (req, res, next) => {
     let token
+    // console.log(req.headers)
+    // console.log(req.headers.authorization)
 
     if (
         req.headers.authorization &&
@@ -21,7 +23,7 @@ const protect = asyncHandler(async (req, res, next) => {
 
             next()
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             res.status(401)
             throw new Error("Not authorized")
         }

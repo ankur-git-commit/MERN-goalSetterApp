@@ -11,7 +11,7 @@ function Header() {
     const onLogOut = () => {
         dispatch(logout())
         dispatch(reset())
-        navigate('/')
+        navigate("/")
     }
     return (
         <header className="header">
@@ -21,7 +21,7 @@ function Header() {
             <ul>
                 {user ? (
                     <li>
-                        <button className="btn"  onClick={onLogOut}>
+                        <button className="btn" onClick={onLogOut}>
                             <FaSignOutAlt /> Logout
                         </button>
                     </li>
