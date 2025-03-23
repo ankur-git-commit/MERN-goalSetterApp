@@ -23,6 +23,7 @@ function GoalForm() {
                         id="text"
                         value={text}
                         onChange={(e) => setText(e.target.value)}
+                        autoFocus
                     />
                 </div>
                 <div className="form-group">
