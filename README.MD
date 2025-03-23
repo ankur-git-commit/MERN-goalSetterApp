@@ -1,4 +1,4 @@
-![App Image](Trackly.png)
+![App Image](Trackly.PNG)
 
 # Goal Tracking App
 
