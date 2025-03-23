@@ -16,7 +16,7 @@ function GoalForm() {
         <section className="form">
             <form onSubmit={onSubmit}>
                 <div className="form-group">
-                    <label htmlFor="">Goal</label>
+                    <label htmlFor="text">Goal</label>
                     <input
                         type="text"
                         name="text"

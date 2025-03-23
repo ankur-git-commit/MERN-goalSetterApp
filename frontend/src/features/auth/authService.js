@@ -19,26 +19,27 @@ const login = async (userData) => {
     if (response.data) {
         localStorage.setItem("user", JSON.stringify(response.data))
     }
+    // console.log(response.data)
     return response.data
 }
 
-// Code suggested for adding bearer token
-const setupAxiosInterceptors = () => {
-    axios.interceptors.request.use(
-        (config) => {
-            const user = JSON.parse(localStorage.getItem('user'))
-            if (user && user.token) {
-                config.headers.Authorization = `Bearer ${user.token}`
-            }
-            return config
-        },
-        (error) => {
-            return Promise.reject(error)
-        }
-    )
-}
+// adding bearer token
+// const setupAxiosInterceptors = () => {
+//     axios.interceptors.request.use(
+//         (config) => {
+//             const user = JSON.parse(localStorage.getItem('user'))
+//             if (user && user.token) {
+//                 config.headers.Authorization = `Bearer ${user.token}`
+//             }
+//             return config
+//         },
+//         (error) => {
+//             return Promise.reject(error)
+//         }
+//     )
+// }
 
-// setupAxiosInterceptors()
+// // setupAxiosInterceptors()
 
 // Logout user
 const logout = () => {
