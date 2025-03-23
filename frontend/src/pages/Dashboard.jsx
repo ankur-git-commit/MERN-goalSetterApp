@@ -17,15 +17,17 @@ function Dashboard() {
 
     useEffect(() => {
         if (isError) {
-            console.log(user)
+            // console.log(user)
             console.log(message)
         }
 
         if (!user) {
-            navigate("/login")
+            return navigate("/login")
         }
 
-        dispatch(getGoals())
+        if (user){
+            dispatch(getGoals())
+        }
 
         return () => {
             dispatch(reset())

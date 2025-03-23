@@ -7,7 +7,8 @@ function Header() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const { user } = useSelector((state) => state.auth)
-
+    // console.log(user)
+    
     const onLogOut = () => {
         dispatch(logout())
         dispatch(reset())
@@ -16,7 +17,7 @@ function Header() {
     return (
         <header className="header">
             <div className="logo">
-                <Link to="/"> GoalSetter</Link>
+                <Link to="/">GoalSetter</Link>
             </div>
             <ul>
                 {user ? (
