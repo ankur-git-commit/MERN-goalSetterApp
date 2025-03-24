@@ -177,11 +177,7 @@ Redux Toolkit is used for state management with the following slices:
 
 ## Deployment
 
-For deployment, consider the following options:
-- Render
-- Heroku
-- Vercel (Frontend)
-- MongoDB Atlas (Database)
+- Versel
 
 ## Future Enhancements
 
